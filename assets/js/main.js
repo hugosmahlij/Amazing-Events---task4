@@ -96,7 +96,7 @@ if(title.text.includes('Home')){
   }
 }else{
   url = {
-    details: `./pages/details.html`,
+    details: `./details.html`,
     img404: `../assets/img/404.png`,
   }
 }
