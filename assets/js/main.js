@@ -88,11 +88,25 @@ function cardsBySearch(array, text) {
   return cardsFilterBySearch;
 }
 
+let url
+if(title.text.includes('Home')){
+  url = {
+    details: `./pages/details.html`,
+    img404: `./assets/img/404.png`,
+  }
+}else{
+  url = {
+    details: `./pages/details.html`,
+    img404: `./assets/img/404.png`,
+  }
+}
+
+
 function searchNull() {
   container.innerHTML = `
   <div class="d-flex flex-column align-items-center">
   <h3>THE SEARCH IS UNAVAILABLE</h3>
-  <img class="img-fluid d-flex justify-content-center align-items-center" style="height: 370px;"  src="https://media2.giphy.com/media/11gZBGuDnYwdpu/200w.webp?cid=ecf05e47ub99m8b5b05m3bkqtkjvt67jybnmck75mcdmu80y&rid=200w.webp&ct=g" alt="404notfound">
+  <img class="img-fluid d-flex justify-content-center align-items-center" style="height: 370px;"  src="${url.img404}" alt="404notfound">
 </div>
   `;
 }
@@ -110,7 +124,7 @@ function getCard(event) {
             </p>
             <div class="w-100 d-flex align-items-center justify-content-evenly">
               <p>Price $${event.price}</p>
-              <a href="../pages/details.html?id=${event.id}" class="d-flex btn btn-danger">Details</a>
+              <a href="${url.details}?id=${event.id}" class="d-flex btn btn-danger">Details</a>
             </div>
           </div>
         </div>
