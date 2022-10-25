@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-item{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1em;
+    gap: 10em !important;
+}
+
+.carousel_a{
+    background-color: rgba(182, 178, 178, 0.5);
+    width: 100%;
+    height: 4em;
+}
+
+.header{
+    height: 5em;
+}
+
+.footer{
+    height: 5em;
+}
+
+.logo_footer{
+    width: 3em;
+}
+
+.main{
+    min-height: calc(100vh - 100px - 300px);
+}
+
+.nav_list{
+    position: relative;
+    z-index: 1;
+}
+
+.a_1{
+    height: 20em;
+    background-image: url(../img/conf_events.jpg);
+    background-repeat: no-repeat;
+    background-position: center;/* 
+    background-position-y: -7em;    */ 
+}
+
+.a_2{
+    height: 20em;
+    background-image: url(../img/costume_events.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;/* 
+    background-position-y: -10em; */
+}
+
+.a_3{
+    height: 20em;
+    background-image: url(../img/diner_events.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -7em;
+}
+
+.a_4{
+    height: 20em;
+    background-image: url(../img/party_events.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -7em;
+}
+
+.a_5{
+    height: 20em;
+    background-image: url(../img/sport_events.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -6em;
+}
+
+.editcarousel{
+    height: 20em;
+}
+
+.innercarousel{
+    height: 20em;
+}
+
+.card_container{
+    width: 25em;
+    height: 30em!important;
+}
+
+.img_card{
+    height: 200px;
+    object-fit: cover;
+}
+
+.img_details{
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.data_table{
+    text-align: center;
+}
